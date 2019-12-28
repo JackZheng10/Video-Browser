@@ -10,7 +10,7 @@ class SearchBar extends React.Component {
   onFormSubmit = event => {
     event.preventDefault();
 
-    //TODO: this.props.onSearchSubmit , from parent component App
+    this.props.onSearch(this.state.term);
   };
 
   render() {
